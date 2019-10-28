@@ -35,6 +35,12 @@ background_checks %>%
   filter(state == "Kentucky")
 
 
+# Preceptor said something about prep.R that runs scripts that start form large files to what you need on Shiny
+# Prep.r to RDS File
+# I want to get the file that I can then feed into an RMarkdown without overwhelming github
+# Write_rds? Read_rds?
+
+
 gun_violence <- read_csv("gun-violence-data_01-2013_03-2018.csv", col_types = cols(
     .default = col_character(),
     incident_id = col_double(),
